@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid Density Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="finalDensityRadio" name="variables" checked>
+  <label for="finalDensityRadio">Final Density</label>
+
+  <input type="radio" id="initialDensityRadio" name="variables" disabled>
+  <label for="initialDensityRadio">Initial Density</label>
+
+  <input type="radio" id="coefficientofVolumetricTemperatureExpansionRadio" name="variables" disabled>
+  <label for="coefficientofVolumetricTemperatureExpansionRadio">Coefficient of Volumetric Temperature Expansion</label>
+
+  <input type="radio" id="initialTemperatureRadio" name="variables" disabled>
+  <label for="initialTemperatureRadio">Initial Temperature</label>
+
+  <input type="radio" id="finalTemperatureRadio" name="variables" disabled>
+  <label for="finalTemperatureRadio">Final Temperature</label>
+
+  <input type="radio" id="initialPressureRadio" name="variables" disabled>
+  <label for="initialPressureRadio">Initial Pressure</label>
+
+  <input type="radio" id="finalPressureRadio" name="variables" disabled>
+  <label for="finalPressureRadio">Final Pressure</label>
+
+  <input type="radio" id="bulkModulusFluidElasticityRadio" name="variables"  disabled>
+  <label for="bulkModulusFluidElasticityRadio">Bulk Modulus Fluid Elasticity</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(ρ0) Initial Density (kg/m³)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(β) Coefficient of Volumetric Temperature Expansion (m³/m³°C)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(t0) Initial Temperature (°C)</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">(t1) Final Temperature (°C)</label>
+  <input type="number" id="v4"><br><br>
+  
+  <label for="v5" id="variable5">(p0) Initial Pressure (N/m²)</label>
+  <input type="number" id="v5"><br><br>
+  
+  <label for="v6" id="variable6">(p1) Final Pressure (N/m²)</label>
+  <input type="number" id="v6"><br><br>
+  
+  <label for="v7" id="variable7">(E) Bulk Modulus Fluid Elasticity (N/m²)</label>
+  <input type="number" id="v7"><br><br>
+
+  <button id="btn">compute</button> 
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
